@@ -1,0 +1,11 @@
+.app-body {
+    background-color: #282c34;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 0.875rem;
+    color: white;
+}

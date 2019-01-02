@@ -189,4 +189,21 @@ const Person = function(name, work) {
 };
 let person = new Person('xiao ming', 'code');
 
-export { CheckObject, PopFactory, createPop, SafeFactory, VehicleFactory };
+
+
+const Dkal = {
+    Util: {
+        
+    },
+    Tools: {
+
+    },
+    Ajax: {
+
+    },
+    Others: {
+
+    },
+};
+export default Dkal;
+//export { CheckObject, PopFactory, createPop, SafeFactory, VehicleFactory };
