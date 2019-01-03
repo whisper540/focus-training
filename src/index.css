@@ -11,6 +11,7 @@ html{
 
 *, *:before, *:after {
   box-sizing: inherit;
+  color: #8C94A9;
 }
 
 body,div,section,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,a,p,blockquote,th,td {
