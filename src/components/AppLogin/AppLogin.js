@@ -2,7 +2,7 @@ import React from 'react';
 import './AppLogin.css';
 
 const AppLogin = () => {
-    let _eye,_pwd;
+    let _eye, _username, _pwd, _errorinfo;
     const clock = function* () {
         while(true) {
             _eye.classList.remove('seesee-close');
@@ -19,6 +19,10 @@ const AppLogin = () => {
     const changeIcon = e => {
         c.next();
     };
+    const checkIn = e => {
+        _errorinfo.classList.remove('info-hidden');
+        _errorinfo.classList.add('info-show');
+    };
     return (
         <div className="app-login">
             <header>六六脑®集中训练</header>
@@ -34,11 +38,17 @@ const AppLogin = () => {
                         </div>
                         <div className="right-body">
                             <div className="input-in">
-                                <label>手机号/用户名</label>
-                                <input type='text' />
+                                <div className="input-info">
+                                    <label>手机号/用户名</label>
+                                    <span className="error-info info-hidden" ref={input => _errorinfo = input}>输入有误,请检查</span>
+                                </div>
+                                <input type='text' onBlur={checkIn} ref={ input => _username = input }/>
                             </div>
                             <div className="input-in">
-                                <label>密码</label>
+                                <div className="input-info">
+                                    <label>密码</label>
+                                    <span className="error-info">&nbsp;</span>
+                                </div>
                                 <input type='password' ref={ input => _pwd = input }/>
                                 <i className="seesee seesee-close" onClick={changeIcon} ref={input => _eye = input}></i>
                             </div>

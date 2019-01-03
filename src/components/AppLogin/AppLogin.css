@@ -70,6 +70,21 @@ a.active {
 .input-in{
     position: relative;
 }
+.input-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.error-info {
+    color:#FE5462;
+    font-size: 0.75rem;
+}
+.info-hidden {
+    display: none;
+}
+.info-show {
+    display: block;
+}
 .input-in input {
     margin-top: 0.625rem;
 }
