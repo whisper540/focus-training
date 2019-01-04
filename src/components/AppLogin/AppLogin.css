@@ -17,6 +17,14 @@ header {
     flex-direction: row;
     align-items: center;
 }
+h1{
+    color:#4C84FF;
+    font-size: 1.125rem;
+    font-weight: normal;
+    margin-left: 1.25rem;
+    padding-left: 2.325rem;
+    background: url('../../assets/imgs/logo.jpg') no-repeat left center;
+}
 .login-body {
     max-width: 62.5rem;
     display: flex;
@@ -152,4 +160,7 @@ input#auto-login:checked+em::before {
 footer {
     display: flex;
     justify-content: center;
+}
+footer div {
+    margin-bottom: 1.25rem;
 }

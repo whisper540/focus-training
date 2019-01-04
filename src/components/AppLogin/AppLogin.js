@@ -1,7 +1,7 @@
 import React from 'react';
 import './AppLogin.css';
 
-const AppLogin = () => {
+const AppLogin = ({history}) => {
     let _eye, _username, _pwd, _errorinfo;
     const clock = function* () {
         while(true) {
@@ -19,13 +19,44 @@ const AppLogin = () => {
     const changeIcon = e => {
         c.next();
     };
-    const checkIn = e => {
-        _errorinfo.classList.remove('info-hidden');
-        _errorinfo.classList.add('info-show');
+    const checkPhoneNum = function($phoneInput) {
+        let $reg = /^[1][3,4,5,7,8][0-9]{9}$/;
+        if (!$reg.test($phoneInput)) {
+            return false;
+        } else {
+            return true;
+        }
     };
+    const checkUsername = function($usernameInput) {
+        let $reg = /^[a-zA-z]{4,9}$/;
+        if (!$reg.test($usernameInput)) {
+            return false;
+        } else {
+            return true;
+        }
+    };
+    // const checkPassword = function($passwordInput) {
+
+    // };
+    const checkIn = e => {
+        if (checkPhoneNum(_username.value) || checkUsername(_username.value)) {
+            _errorinfo.classList.remove('info-show');
+            _errorinfo.classList.add('info-hidden');
+        } else {
+            _errorinfo.classList.remove('info-hidden');
+            _errorinfo.classList.add('info-show');
+        }
+    };
+
+    const goto_Pages = function() {
+        history.push(`/`);
+    };
+
     return (
         <div className="app-login">
-            <header>六六脑®集中训练</header>
+            <header>
+                <h1>六六脑®集中训练</h1>
+            </header>
             <div className="login-body">
                 <div className="body-left">
                    &nbsp;
@@ -33,14 +64,14 @@ const AppLogin = () => {
                 <div className="body-right">
                     <div className="right-container">
                         <div className="right-header">
-                            <a className="active" href="javascript:void(0);">密码登录</a>
+                            <a className="active" href="javascript:void(0);" role="button">密码登录</a>
                             <a href="javascript:void(0);">短信验证码登录</a>
                         </div>
                         <div className="right-body">
                             <div className="input-in">
                                 <div className="input-info">
                                     <label>手机号/用户名</label>
-                                    <span className="error-info info-hidden" ref={input => _errorinfo = input}>输入有误,请检查</span>
+                                    <span className="error-info info-hidden" ref={input => _errorinfo = input}>输入格式有误,请检查</span>
                                 </div>
                                 <input type='text' onBlur={checkIn} ref={ input => _username = input }/>
                             </div>
@@ -58,7 +89,7 @@ const AppLogin = () => {
                                 <em></em>
                             </div>
                             <div className="login-button">
-                                <button>登录</button>
+                                <button onClick={goto_Pages}>登录</button>
                             </div>
                         </div>
                         <div className="right-footer">
@@ -68,7 +99,9 @@ const AppLogin = () => {
                     </div>
                 </div>
             </div>
-            <footer>版权信息</footer>
+            <footer>
+                <div>版权信息</div>
+            </footer>
         </div>
     );
 };

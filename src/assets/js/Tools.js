@@ -187,7 +187,7 @@ const Person = function(name, work) {
     _person.work = new Work(work);
     return _person;
 };
-let person = new Person('xiao ming', 'code');
+// let person = new Person('xiao ming', 'code');
 
 
 
@@ -196,7 +196,22 @@ const Dkal = {
         
     },
     Tools: {
-
+        checkPhoneNum($phoneInput) {
+            let $reg = /^[1][3,4,5,7,8][0-9]{9}$/;
+            if(!$reg.test($phoneInput)) {
+                return false;
+            } else {
+                return true;
+            }
+        },
+        checkUsername($usernameInput) {
+            let $reg = /^[a-zA-z]{4-9}$/;
+            if(!$reg.test($usernameInput)) {
+                return false;
+            } else {
+                return true;
+            }
+        }
     },
     Ajax: {
 

@@ -1,5 +1,5 @@
 .app-body {
-    background-color: #282c34;
+    background-color: #F5F6FA;
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -8,4 +8,77 @@
     align-items: center;
     font-size: 0.875rem;
     color: white;
+}
+.body-container {
+    margin-top: 1.875rem;
+    width: 62.5rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+a.train-filter{
+    position: relative;
+    display: inline-block;
+    width: 7.5rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    text-align: center;
+    color: #4C84FF;
+    border: 1px solid #EDEDF1;
+}
+a.train-filter ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 3.125rem;
+    background-color: #fff;
+}
+a.train-filter ul li{
+    display: block;
+    width: 7.5rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    text-align: center;
+}
+a.train-filter ul li span{
+    display: inline-block;
+    width: 7.5rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+}
+a.train-filter ul li:hover span {
+    color: #4C84FF;
+    border-left: 3px solid #4C84FF;
+}
+a.train-filter:hover ul{
+    display: block;
+}
+span.filter-active{
+    color: #4C84FF;
+    border-left: 3px solid #4C84FF;
+}
+.create-date {
+    display: inline-block;
+    width: 7.5rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    text-align: center;
+    color: #4C84FF;
+    border: 1px solid #EDEDF1;
+}
+.search-input {
+    width: 40rem;
+    height: 3.125rem;
+    background-color:#fff;
+    border: 1px solid #EDEDF1;
+    padding-left: 1.875rem;
+}
+.create-btn {
+    background-color: #4C84FF;
+    color: #fff;
+    width: 7.5rem;
+    height: 3.125rem;
+    cursor: pointer;
 }
