@@ -82,3 +82,54 @@ span.filter-active{
     height: 3.125rem;
     cursor: pointer;
 }
+.train-list-container {
+    padding: 0 1.875rem;
+}
+dl.train-list dt, dl.train-list dd{
+    border-bottom: 1px solid #EDEDF1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+dl.train-list dt span, dl.train-list dd span{
+    display:inline-block;
+    height: 3.125rem;
+    line-height: 3.125rem;
+}
+dl.train-list dd span {
+    color:#19233C;
+}
+dl.train-list dd span i{
+    color: #FE5462;
+    font-style: normal;
+}
+dl.train-list dt span:nth-child(1), dl.train-list dd span:nth-child(1){
+    width:2.625rem;
+}
+dl.train-list dt span:nth-child(2), dl.train-list dd span:nth-child(2){
+    width:1.75rem;
+}
+dl.train-list dt span:nth-child(3), dl.train-list dd span:nth-child(3){
+    width:6.9375rem;
+}
+dl.train-list dt span:nth-child(4), dl.train-list dd span:nth-child(4){
+    width:7.5rem;
+}
+dl.train-list dt span:nth-child(5), dl.train-list dd span:nth-child(5){
+    width:21.875rem;
+}
+dl.train-list dt span:nth-child(6), dl.train-list dd span:nth-child(6){
+    width:4.125rem;
+}
+.train-page-btn {
+    display: flex;
+    flex-direction: row-reverse;
+    padding:0 1.875rem;
+}
+.train-page-btn span{
+    display: inline-block;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    margin-left: 1.875rem;
+    cursor: pointer;
+}
