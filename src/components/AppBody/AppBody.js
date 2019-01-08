@@ -1,5 +1,6 @@
 import React from 'react';
 import './AppBody.css';
+import ProgressBar from '../libs/ProgressBar/ProgressBar.js';
 
 const AppBody = () => {
     return (
@@ -33,7 +34,7 @@ const AppBody = () => {
                             <span>草稿</span>
                             <span>9</span>
                             <span>2019.01.04 10:10</span>
-                            <span><progress></progress></span>
+                            <span><ProgressBar initData={{ "total": 100, "value": 10, "color": "#2EC5CC", "id":"prgress-canvas01" }}/></span>
                             <span>言语1部</span>
                             <span>查看</span>
                         </dd>
@@ -41,7 +42,7 @@ const AppBody = () => {
                             <span>草稿</span>
                             <span>9</span>
                             <span>2019.01.04 10:10</span>
-                            <span><progress></progress></span>
+                            <span><ProgressBar initData={{ "total": 100, "value": 20, "color": "#2EC5CC", "id": "prgress-canvas02" }} /></span>
                             <span>言语1部</span>
                             <span>查看</span>
                         </dd>
@@ -49,7 +50,7 @@ const AppBody = () => {
                             <span>草稿</span>
                             <span>9</span>
                             <span>2019.01.04 10:10</span>
-                            <span><progress></progress></span>
+                            <span><ProgressBar initData={{ "total": 100, "value": 40, "color": "#4C84FF", "id": "prgress-canvas03" }} /></span>
                             <span>言语1部</span>
                             <span>查看 <i>删除</i></span>
                         </dd>
@@ -57,7 +58,7 @@ const AppBody = () => {
                             <span>草稿</span>
                             <span>9</span>
                             <span>2019.01.04 10:10</span>
-                            <span><progress></progress></span>
+                            <span><ProgressBar initData={{ "total": 100, "value": 60, "color": "#FE5462", "id": "prgress-canvas04" }} /></span>
                             <span>言语1部</span>
                             <span>查看</span>
                         </dd>
@@ -65,7 +66,7 @@ const AppBody = () => {
                             <span>草稿</span>
                             <span>9</span>
                             <span>2019.01.04 10:10</span>
-                            <span><progress></progress></span>
+                            <span><ProgressBar initData={{ "total": 100, "value": 80, "color": "#2EC5CC", "id": "prgress-canvas05" }} /></span>
                             <span>言语1部</span>
                             <span>查看</span>
                         </dd>
@@ -73,7 +74,7 @@ const AppBody = () => {
                             <span>草稿</span>
                             <span>9</span>
                             <span>2019.01.04 10:10</span>
-                            <span><progress></progress></span>
+                            <span><ProgressBar initData={{ "total": 100, "value": 50, "color": "#FF8300", "id": "prgress-canvas06" }} /></span>
                             <span>言语1部</span>
                             <span>查看</span>
                         </dd>
@@ -81,7 +82,7 @@ const AppBody = () => {
                             <span>草稿</span>
                             <span>9</span>
                             <span>2019.01.04 10:10</span>
-                            <span><progress></progress></span>
+                            <span><ProgressBar initData={{ "total": 100, "value": 90, "color": "#2EC5CC", "id": "prgress-canvas07" }} /></span>
                             <span>言语1部</span>
                             <span>查看</span>
                         </dd>

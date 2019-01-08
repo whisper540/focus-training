@@ -60,8 +60,9 @@ h1{
 .right-header a {
     margin-right: 2.5rem;
 }
-a.active {
+a.right-active {
     color: #4C84FF;
+    text-decoration: none;
 }
 .right-body {
     min-height: 15rem;

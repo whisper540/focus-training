@@ -1,0 +1,10 @@
+@charset "utf-8";
+.app-progress-bar {
+    display: inline-block;
+    width:7.5rem;
+    height: 3.125rem;
+}
+.app-progress-bar canvas{
+    width: 7.5rem;
+    height: 3.125rem;
+}

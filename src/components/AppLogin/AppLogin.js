@@ -64,7 +64,7 @@ const AppLogin = ({history}) => {
                 <div className="body-right">
                     <div className="right-container">
                         <div className="right-header">
-                            <a className="active" href="javascript:void(0);" role="button">密码登录</a>
+                            <a className="right-active" href="javascript:void(0);" role="button">密码登录</a>
                             <a href="javascript:void(0);">短信验证码登录</a>
                         </div>
                         <div className="right-body">
